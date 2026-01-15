@@ -52,7 +52,7 @@ const App = () => {
   const [showManagerModal, setShowManagerModal] = useState(false);
   const [managerPin, setManagerPin] = useState('');
   const [pinError, setPinError] = useState(false);
-  const CORRECT_PIN = "160885"; 
+  const CORRECT_PIN = "1608"; 
 
   const [newMemberName, setNewMemberName] = useState('');
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
@@ -636,5 +636,6 @@ const App = () => {
 };
 
 export default App;
+
 
 
