@@ -255,7 +255,7 @@ const App = () => {
                   maxLength={4}
                   value={managerPin}
                   onChange={(e) => { setManagerPin(e.target.value); setPinError(false); }}
-                  placeholder="পিন "
+                  placeholder="pin code"
                   className={`w-full p-4 rounded-2xl border ${pinError ? 'border-red-500 bg-red-50' : 'border-slate-200'} text-center text-2xl tracking-[1rem] font-black focus:ring-2 focus:ring-blue-100 outline-none transition-all`}
                   autoFocus
                 />
@@ -636,4 +636,5 @@ const App = () => {
 };
 
 export default App;
+
 
