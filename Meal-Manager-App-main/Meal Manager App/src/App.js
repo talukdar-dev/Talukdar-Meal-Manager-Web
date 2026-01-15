@@ -52,7 +52,7 @@ const App = () => {
   const [showManagerModal, setShowManagerModal] = useState(false);
   const [managerPin, setManagerPin] = useState('');
   const [pinError, setPinError] = useState(false);
-  const CORRECT_PIN = "1234"; 
+  const CORRECT_PIN = "160885"; 
 
   const [newMemberName, setNewMemberName] = useState('');
   const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
@@ -255,7 +255,7 @@ const App = () => {
                   maxLength={4}
                   value={managerPin}
                   onChange={(e) => { setManagerPin(e.target.value); setPinError(false); }}
-                  placeholder="পিন দিন (ডিফল্ট ১২৩৪)"
+                  placeholder="পিন "
                   className={`w-full p-4 rounded-2xl border ${pinError ? 'border-red-500 bg-red-50' : 'border-slate-200'} text-center text-2xl tracking-[1rem] font-black focus:ring-2 focus:ring-blue-100 outline-none transition-all`}
                   autoFocus
                 />
@@ -343,7 +343,7 @@ const App = () => {
 
       <main className="max-w-4xl mx-auto p-4 md:pb-24 pb-20">
         <header className="mb-6">
-          <h1 className="text-2xl font-black text-slate-800 tracking-tight">স্বপ্নধারা মিল সিট</h1>
+          <h1 className="text-2xl font-black text-slate-800 tracking-tight">স্বপ্নধারা মিল ম্যানেজমেন্ট সিস্টেম</h1>
           <p className="text-slate-500 text-sm">সহজ মেস ম্যানেজমেন্ট সিস্টেম</p>
         </header>
 
@@ -636,3 +636,4 @@ const App = () => {
 };
 
 export default App;
+
